@@ -2,7 +2,7 @@
 
 > An executive data analytics web platform and interactive Tableau dashboard exploring global electric vehicle adoption, automaker market share, pricing dynamics, battery capacity progressions, and real-world driving range distributions.
 
-[![Deploy to GitHub Pages](https://github.com/pranjal-joshi/ev-insights/actions/workflows/deploy.yml/badge.svg)](https://github.com/pranjal-joshi/ev-insights/actions/workflows/deploy.yml)
+[![Deploy to GitHub Pages](https://github.com/joshipranjal2309-pj/EV_ANALYSIS/actions/workflows/deploy.yml/badge.svg)](https://github.com/actions/workflows/deploy.yml)
 [![Built with React](https://img.shields.io/badge/Frontend-React_19-blue.svg)](https://react.dev/)
 [![Bundled with Vite](https://img.shields.io/badge/Bundler-Vite_8-646CFF.svg)](https://vitejs.dev/)
 [![Styled with Tailwind CSS](https://img.shields.io/badge/Styling-Tailwind_CSS_v4-38B2AC.svg)](https://tailwindcss.com/)
@@ -71,7 +71,7 @@ As the global automotive industry navigates a historic transition toward electri
 ## 4. Project Structure
 
 ```text
-ev-insights/
+ev_analysis/
 ├── .github/
 │   └── workflows/
 │       └── deploy.yml        # Automated GitHub Actions build & deploy workflow
@@ -110,8 +110,8 @@ ev-insights/
 
 ### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/pranjal-joshi/ev-insights.git
-cd ev-insights
+git clone https://github.com/joshipranjal2309-pj/ev_analysis.git
+cd ev_analysis
 ```
 
 ### Step 2: Install Dependencies
@@ -150,15 +150,15 @@ git commit -m "feat: complete EV Insights platform with Tableau Public integrati
 ```
 
 ### Step 2: Link to Your GitHub Repository
-Replace `<your-username>` with your GitHub username:
+Replace `joshipranjal2309-pj` with your GitHub username:
 ```bash
 git branch -M main
-git remote add origin https://github.com/<your-username>/ev-insights.git
+git remote add origin https://github.com/joshipranjal2309-pj/ev_analysis.git
 git push -u origin main
 ```
 
 ### Step 3: Enable GitHub Pages in Repository Settings
-1. Open your repository on GitHub (`https://github.com/<your-username>/ev-insights`).
+1. Open your repository on GitHub (`https://github.com/joshipranjal2309-pj/ev_analysis`).
 2. Click on **Settings** (top navigation tab).
 3. In the left sidebar, click on **Pages** (under the "Code and automation" section).
 4. Under **Build and deployment** > **Source**, select:
@@ -168,7 +168,7 @@ git push -u origin main
 ### Step 4: Access Your Live Site
 Your live website will be accessible at:
 ```text
-https://<your-username>.github.io/ev-insights/
+https://joshipranjal2309-pj.github.io/ev_analysis/
 ```
 *Because `vite.config.js` uses `base: './'`, relative asset paths resolve automatically without hardcoding paths or breaking images/scripts.*
 
