@@ -7,10 +7,10 @@ import {
   LayoutDashboard, 
   BookOpen, 
   Code2, 
-  FileCheck2,
-  Workflow,
-  Sparkles,
-  ArrowRight
+  FileCheck2, 
+  Workflow, 
+  Sparkles, 
+  ArrowRight 
 } from 'lucide-react';
 
 export default function Methodology() {
@@ -74,12 +74,12 @@ export default function Methodology() {
   ];
 
   return (
-    <section id="methodology" className="py-24 bg-[#080a0f] relative border-t border-slate-800">
+    <section id="methodology" className="py-24 bg-[#070d19] relative border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-semibold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-cyan-400 text-xs font-semibold uppercase tracking-wider">
             <Workflow className="w-3.5 h-3.5" />
             <span>Structured Analytical Pipeline</span>
           </div>
@@ -99,12 +99,12 @@ export default function Methodology() {
             return (
               <div 
                 key={step.num}
-                className="relative p-6 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-amber-500/40 transition-all duration-300 group hover:bg-slate-900/90 flex flex-col justify-between"
+                className="relative p-6 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-blue-500/50 transition-all duration-300 group hover:bg-slate-900/90 flex flex-col justify-between"
               >
                 <div>
                   {/* Step Header */}
                   <div className="flex items-center justify-between mb-4">
-                    <span className="font-mono text-2xl font-black text-amber-500/60 group-hover:text-amber-400 transition-colors">
+                    <span className="font-mono text-2xl font-black text-cyan-400/50 group-hover:text-cyan-400 transition-colors">
                       {step.num}
                     </span>
                     <span className="text-[10px] font-semibold uppercase px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700">
@@ -114,10 +114,10 @@ export default function Methodology() {
 
                   {/* Icon & Title */}
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="p-2.5 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors">
+                    <div className="p-2.5 rounded-xl bg-blue-500/10 border border-blue-500/20 text-cyan-400 group-hover:bg-blue-600 group-hover:text-white transition-colors">
                       <Icon className="w-5 h-5" />
                     </div>
-                    <h3 className="text-sm font-bold text-white group-hover:text-amber-300 transition-colors">
+                    <h3 className="text-sm font-bold text-white group-hover:text-cyan-300 transition-colors">
                       {step.title}
                     </h3>
                   </div>
@@ -131,7 +131,7 @@ export default function Methodology() {
                 {/* Bottom Step Indicator */}
                 <div className="mt-5 pt-3 border-t border-slate-800/80 flex items-center justify-between text-[11px] text-slate-500">
                   <span>Stage {idx + 1} of 8</span>
-                  <ArrowRight className="w-3.5 h-3.5 text-slate-600 group-hover:text-amber-400 group-hover:translate-x-1 transition-all" />
+                  <ArrowRight className="w-3.5 h-3.5 text-slate-600 group-hover:text-cyan-400 group-hover:translate-x-1 transition-all" />
                 </div>
               </div>
             );

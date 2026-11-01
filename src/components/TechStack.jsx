@@ -92,12 +92,12 @@ export default function TechStack() {
   ];
 
   return (
-    <section id="technologies" className="py-24 bg-[#090b11] relative border-t border-slate-800">
+    <section id="technologies" className="py-24 bg-[#070d19] relative border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-semibold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-cyan-400 text-xs font-semibold uppercase tracking-wider">
             <Cpu className="w-3.5 h-3.5" />
             <span>Modern Production Stack</span>
           </div>
@@ -112,16 +112,16 @@ export default function TechStack() {
 
         {/* Tech Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-16">
-          {technologies.map((tech, index) => {
+          {technologies.map((tech) => {
             const Icon = tech.icon;
             return (
               <div
                 key={tech.name}
-                className="p-5 rounded-2xl bg-slate-900/60 border border-slate-800/80 hover:border-amber-500/40 transition-all duration-300 group hover:bg-slate-900/90 flex flex-col justify-between"
+                className="p-5 rounded-2xl bg-slate-900/60 border border-slate-800/80 hover:border-blue-500/50 transition-all duration-300 group hover:bg-slate-900/90 flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors">
+                    <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-cyan-400 group-hover:bg-blue-600 group-hover:text-white transition-colors">
                       <Icon className="w-5 h-5" />
                     </div>
                     <span className="text-[10px] font-semibold uppercase px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700">
@@ -129,10 +129,10 @@ export default function TechStack() {
                     </span>
                   </div>
 
-                  <h3 className="text-base font-bold text-white group-hover:text-amber-300 transition-colors">
+                  <h3 className="text-base font-bold text-white group-hover:text-cyan-300 transition-colors">
                     {tech.name}
                   </h3>
-                  <span className="text-[11px] font-medium text-amber-400/90 block mt-0.5">
+                  <span className="text-[11px] font-medium text-cyan-400/90 block mt-0.5">
                     {tech.category}
                   </span>
 
@@ -146,9 +146,9 @@ export default function TechStack() {
         </div>
 
         {/* Architectural Principles Box */}
-        <div className="rounded-2xl p-6 sm:p-8 bg-gradient-to-r from-slate-900 via-[#0d121c] to-slate-900 border border-slate-800 shadow-xl">
+        <div className="rounded-2xl p-6 sm:p-8 bg-gradient-to-r from-slate-900 via-[#0a1120] to-slate-900 border border-slate-800 shadow-xl">
           <h3 className="text-sm uppercase tracking-wider font-bold text-slate-300 mb-6 flex items-center gap-2">
-            <CheckCircle2 className="w-4 h-4 text-amber-400" />
+            <CheckCircle2 className="w-4 h-4 text-cyan-400" />
             <span>Architecture & Hosting Guarantees</span>
           </h3>
 
@@ -157,7 +157,7 @@ export default function TechStack() {
               const Icon = item.icon;
               return (
                 <div key={idx} className="flex items-start gap-3.5">
-                  <div className="p-2 rounded-lg bg-amber-500/10 text-amber-400 shrink-0 mt-0.5">
+                  <div className="p-2 rounded-lg bg-blue-500/10 text-cyan-400 shrink-0 mt-0.5">
                     <Icon className="w-4 h-4" />
                   </div>
                   <div>

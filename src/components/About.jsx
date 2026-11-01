@@ -45,12 +45,12 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-24 bg-[#090c12] relative border-t border-slate-800/80">
+    <section id="about" className="py-24 bg-[#070d19] relative border-t border-slate-800/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-semibold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-cyan-400 text-xs font-semibold uppercase tracking-wider">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Academic & Analytical Foundation</span>
           </div>
@@ -70,14 +70,14 @@ export default function About() {
             return (
               <div 
                 key={index}
-                className="relative p-7 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-amber-500/40 transition-all duration-300 group hover:bg-slate-900/90 hover:shadow-xl hover:shadow-amber-500/5"
+                className="relative p-7 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-blue-500/50 transition-all duration-300 group hover:bg-slate-900/90 hover:shadow-xl hover:shadow-blue-500/10"
               >
                 <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors shrink-0">
+                  <div className="p-3 rounded-xl bg-blue-500/10 border border-blue-500/20 text-cyan-400 group-hover:bg-blue-600 group-hover:text-white transition-colors shrink-0">
                     <Icon className="w-6 h-6" />
                   </div>
                   <div className="space-y-2">
-                    <h3 className="text-lg font-bold text-white group-hover:text-amber-300 transition-colors">
+                    <h3 className="text-lg font-bold text-white group-hover:text-cyan-300 transition-colors">
                       {item.title}
                     </h3>
                     <p className="text-sm text-slate-300 leading-relaxed">
@@ -91,11 +91,11 @@ export default function About() {
         </div>
 
         {/* Deep Dive Summary Box */}
-        <div className="rounded-2xl p-8 bg-gradient-to-r from-slate-900 via-[#0d121b] to-slate-900 border border-slate-800/80 shadow-xl">
+        <div className="rounded-2xl p-8 bg-gradient-to-r from-slate-900 via-[#0a1120] to-slate-900 border border-slate-800/80 shadow-xl">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
             <div className="lg:col-span-7 space-y-4">
-              <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-amber-400">
+              <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-cyan-400">
                 <Globe2 className="w-4 h-4" />
                 <span>Strategic Research Scope</span>
               </div>
@@ -110,15 +110,15 @@ export default function About() {
               </p>
             </div>
 
-            <div className="lg:col-span-5 bg-slate-950/70 p-6 rounded-xl border border-slate-800">
+            <div className="lg:col-span-5 bg-slate-900/80 p-6 rounded-xl border border-slate-800">
               <h4 className="text-xs uppercase tracking-wider font-bold text-slate-300 mb-4 flex items-center gap-2">
-                <Zap className="w-4 h-4 text-amber-400" />
+                <Zap className="w-4 h-4 text-cyan-400" />
                 <span>Primary Exploration Themes</span>
               </h4>
               <ul className="space-y-2.5">
                 {coreFocusAreas.map((theme, i) => (
                   <li key={i} className="flex items-start gap-2.5 text-xs text-slate-300">
-                    <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
                     <span>{theme}</span>
                   </li>
                 ))}

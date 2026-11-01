@@ -89,16 +89,16 @@ export default function AnalyticsFeatures() {
   ];
 
   return (
-    <section id="analytics" className="py-24 bg-[#090c13] relative border-t border-slate-800">
+    <section id="analytics" className="py-24 bg-[#070d19] relative border-t border-slate-800">
       
-      {/* Ambient background decoration */}
-      <div className="absolute top-1/2 right-10 w-[500px] h-[400px] bg-amber-500/5 rounded-full blur-[150px] pointer-events-none" />
+      {/* Ambient background decoration (Blue Glow) */}
+      <div className="absolute top-1/2 right-10 w-[500px] h-[400px] bg-blue-600/10 rounded-full blur-[150px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-semibold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-cyan-400 text-xs font-semibold uppercase tracking-wider">
             <Sliders className="w-3.5 h-3.5" />
             <span>Analytical Feature Breakdown</span>
           </div>
@@ -115,12 +115,12 @@ export default function AnalyticsFeatures() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {analyticsModules.map((module, index) => {
             const Icon = module.icon;
-            const isWide = index === 6; // Make 7th card span cleanly or stand out nicely
+            const isWide = index === 6;
 
             return (
               <div
                 key={module.id}
-                className={`p-6 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-amber-500/40 transition-all duration-300 group hover:bg-slate-900/90 flex flex-col justify-between ${
+                className={`p-6 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-blue-500/50 transition-all duration-300 group hover:bg-slate-900/90 flex flex-col justify-between ${
                   isWide ? 'md:col-span-2 lg:col-span-1' : ''
                 }`}
               >
@@ -131,17 +131,17 @@ export default function AnalyticsFeatures() {
                     <span className="text-[10px] font-bold tracking-wider uppercase px-2.5 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700">
                       {module.badge}
                     </span>
-                    <span className="text-xs font-mono text-amber-400/80">
+                    <span className="text-xs font-mono text-cyan-400/80">
                       Module 0{index + 1}
                     </span>
                   </div>
 
                   {/* Header & Icon */}
                   <div className="flex items-center gap-3">
-                    <div className="p-2.5 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors">
+                    <div className="p-2.5 rounded-xl bg-blue-500/10 border border-blue-500/20 text-cyan-400 group-hover:bg-blue-600 group-hover:text-white transition-colors">
                       <Icon className="w-5 h-5" />
                     </div>
-                    <h3 className="text-base font-bold text-white group-hover:text-amber-300 transition-colors">
+                    <h3 className="text-base font-bold text-white group-hover:text-cyan-300 transition-colors">
                       {module.title}
                     </h3>
                   </div>
@@ -160,7 +160,7 @@ export default function AnalyticsFeatures() {
                       {module.metrics.map((m, mi) => (
                         <span
                           key={mi}
-                          className="px-2 py-0.5 text-[11px] rounded bg-slate-950 text-slate-300 border border-slate-800/80"
+                          className="px-2 py-0.5 text-[11px] rounded bg-slate-800/80 text-slate-300 border border-slate-700/80"
                         >
                           {m}
                         </span>
@@ -169,7 +169,7 @@ export default function AnalyticsFeatures() {
                   </div>
 
                   {/* Visualization Type Note */}
-                  <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80 text-[11px] text-slate-400">
+                  <div className="p-3 rounded-xl bg-slate-900/90 border border-slate-800/80 text-[11px] text-slate-400">
                     <span className="font-semibold text-slate-300">Viz Representation: </span>
                     <span>{module.vizType}</span>
                   </div>
@@ -183,7 +183,7 @@ export default function AnalyticsFeatures() {
                   </span>
                   <a
                     href="#dashboard"
-                    className="inline-flex items-center gap-1 text-xs font-semibold text-amber-400 hover:text-amber-300 group-hover:translate-x-0.5 transition-transform"
+                    className="inline-flex items-center gap-1 text-xs font-semibold text-cyan-400 hover:text-cyan-300 group-hover:translate-x-0.5 transition-transform"
                   >
                     <span>View in Dashboard</span>
                     <ChevronRight className="w-3.5 h-3.5" />
@@ -196,9 +196,9 @@ export default function AnalyticsFeatures() {
         </div>
 
         {/* Interactive CTA Banner */}
-        <div className="mt-12 p-6 rounded-2xl bg-gradient-to-r from-amber-500/10 via-orange-500/10 to-amber-500/10 border border-amber-500/30 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="mt-12 p-6 rounded-2xl bg-gradient-to-r from-blue-600/10 via-cyan-500/10 to-blue-600/10 border border-blue-500/30 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <Sparkles className="w-6 h-6 text-amber-400 shrink-0" />
+            <Sparkles className="w-6 h-6 text-cyan-400 shrink-0" />
             <div>
               <h4 className="text-sm font-bold text-white">Experience Dynamic Multi-Dimensional Filtering</h4>
               <p className="text-xs text-slate-300">All 7 analytical features are interconnected inside the Tableau Public executive workbook.</p>
@@ -206,7 +206,7 @@ export default function AnalyticsFeatures() {
           </div>
           <a
             href="#dashboard"
-            className="px-4 py-2.5 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs transition-colors shrink-0 shadow-md shadow-amber-500/20"
+            className="px-4 py-2.5 rounded-lg bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 text-white font-bold text-xs transition-colors shrink-0 shadow-md shadow-blue-500/20"
           >
             Launch Interactive Dashboard
           </a>

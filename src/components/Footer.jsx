@@ -28,7 +28,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-[#05070a] border-t border-slate-800 text-slate-400 py-16 relative">
+    <footer className="bg-[#050914] border-t border-slate-800 text-slate-400 py-16 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-slate-800/80">
@@ -36,8 +36,8 @@ export default function Footer() {
           {/* Brand Info */}
           <div className="md:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center text-slate-950 shadow-md shadow-amber-500/20">
-                <Zap className="w-5 h-5 fill-slate-950" />
+              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center text-white shadow-md shadow-blue-500/20">
+                <Zap className="w-5 h-5 fill-white text-white" />
               </div>
               <span className="font-extrabold text-lg text-white tracking-tight">
                 EV INSIGHTS
@@ -69,7 +69,7 @@ export default function Footer() {
                 href={TABLEAU_CONFIG.dashboardUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-amber-500/10 hover:bg-amber-500/20 text-amber-400 hover:text-amber-300 text-xs border border-amber-500/30 transition-colors"
+                className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-blue-500/10 hover:bg-blue-500/20 text-cyan-400 hover:text-cyan-300 text-xs border border-blue-500/30 transition-colors"
               >
                 <BarChart3 className="w-3.5 h-3.5" />
                 <span>Tableau Public</span>
@@ -87,7 +87,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="hover:text-amber-400 transition-colors block py-0.5"
+                    className="hover:text-cyan-400 transition-colors block py-0.5"
                   >
                     {link.label}
                   </a>
@@ -101,7 +101,7 @@ export default function Footer() {
             <h4 className="text-xs font-bold uppercase tracking-wider text-slate-300">
               Deployment & Host
             </h4>
-            <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 text-xs space-y-2">
+            <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-xs space-y-2">
               <div className="flex items-center gap-2 text-emerald-400 font-semibold">
                 <CheckCircle2 className="w-4 h-4" />
                 <span>GitHub Pages Ready</span>
@@ -127,7 +127,7 @@ export default function Footer() {
             aria-label="Back to top of page"
           >
             <span>Back to Top</span>
-            <ArrowUp className="w-3.5 h-3.5 text-amber-400" />
+            <ArrowUp className="w-3.5 h-3.5 text-cyan-400" />
           </button>
         </div>
 

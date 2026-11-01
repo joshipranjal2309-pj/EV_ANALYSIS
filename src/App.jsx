@@ -11,31 +11,18 @@ import Footer from './components/Footer.jsx';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#080a0f] text-slate-100 flex flex-col font-sans selection:bg-amber-500/30 selection:text-amber-200">
+    <div className="min-h-screen bg-[#070d19] text-slate-100 flex flex-col font-sans selection:bg-blue-500/30 selection:text-blue-200">
       {/* Sticky Navigation Bar */}
       <Navbar />
 
       {/* Main Content Sections */}
       <main className="flex-grow">
-        {/* Home / Hero Section */}
         <Hero />
-
-        {/* About Section */}
         <About />
-
-        {/* Interactive Tableau Dashboard Embedding Section */}
         <Dashboard />
-
-        {/* Tableau Story & Narrative Synthesis Section */}
         <Story />
-
-        {/* 7 Core Analytics Modules Section */}
         <AnalyticsFeatures />
-
-        {/* 8-Stage Research Methodology Section */}
         <Methodology />
-
-        {/* Technologies Used Section */}
         <TechStack />
       </main>
 
